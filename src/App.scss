@@ -1,0 +1,11 @@
+html, body{
+  background: var(--background);
+
+  overflow-x: hidden;
+}
+
+.App {
+  display: grid;
+  place-items: center;
+
+}
