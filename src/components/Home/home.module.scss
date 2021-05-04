@@ -52,13 +52,24 @@
 
 
         background: linear-gradient(180deg, var(--blue-light) 0%, (var(--blue-dark)) 100%);
+    
+        animation: list 1s;
+    }
+
+    @keyframes list {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-15deg);
+        }
     }
 
     .rectangle{
         height: 56px;
         
         position: absolute;
-        left: 86%;
+        left: 100%;
         right: -2.04%;
         top: 200px;
         bottom: 90.28%;
@@ -67,13 +78,24 @@
         border-radius: 97px;
         transform: rotate(-15deg);
         z-index: 9;
+        animation: rectangle1 .2s ease-out forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes rectangle1 {
+        0%{
+            left: 100%;
+        }
+        100%{
+            left: 86%;
+        }
     }
 
     .rectangle2{
         height: 56px;
         
         position: absolute;
-        left: 90%;
+        left: 100%;
         right: -3.67%;
         top: 165px;
         bottom: 91.75%;
@@ -83,6 +105,17 @@
         transform: rotate(-15deg);
 
         z-index: 9;
+        animation: rectangle2 .5s ease-out forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes rectangle2 {
+        0%{
+            left: 100%;
+        }
+        100%{
+            left: 90%;
+        }
     }
 
     span{

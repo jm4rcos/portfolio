@@ -15,6 +15,17 @@
         transform: rotate(-15deg);
 
         background: linear-gradient(180deg, #7562E0 0%, #4C4981 100%);    
+    
+        animation: list 1s;
+    }
+
+    @keyframes list {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-15deg);
+        }
     }
 
     .works{
@@ -30,14 +41,15 @@
             flex-direction: column;
             align-items: center;
             
-            background: rgb(255, 223, 223);
+            background: none;
             height: 800px;
             width: 100%;
 
             span{
                 font-size: 1.5rem;
                 font-weight: 600;
-                color: var(--text);
+                color: gray;
+                margin-bottom: 1.5rem;
 
                 a{
                     text-decoration: none;
@@ -53,6 +65,18 @@
                 background: none;
                 box-shadow: 0px 0px 30px 20px rgba(155, 178, 200, 0.33);
                 border-radius: 16px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                overflow: hidden; 
+                
+
+                img{
+                    max-height: 100%;
+                    max-width: 100%;
+                }
             }
 
             h2{
@@ -66,11 +90,77 @@
 
                 color: #428BAB;
             }
+            h3{
+                width: 790px;
+
+                font-weight: 600;
+                font-size: 1.5rem;
+                line-height: 45px;
+            }
         }
         .right{
-            background: rgb(203, 203, 255);
-            height: 800px;
+            height: auto;
             width: 100%;
+
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            padding: 3rem 6rem 3rem 3rem;
+
+            .title{
+                position: absolute;
+
+                font-size: 3rem;
+                top: -3.5rem;
+            }
+
+            .projects{
+                height: 10.2rem;
+                width: 100%;
+
+                cursor: pointer;
+
+
+                a{
+                color: var(--text);
+                font-size: 2.3rem;
+                font-weight: 600;
+                
+                padding: 2.8rem 0rem;
+                width: 100%;
+
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+
+                background: none;
+                border: none;
+
+                border-bottom: 1px solid #9F9F9F;
+                transition: .2s;
+
+                text-decoration: none;
+
+                position: relative;
+
+                    &:hover{
+                        background: #EEEEEE;
+
+                        &::after{
+                            content: 'view site';
+                            font-size: 1.1rem;
+                            font-weight: 400;
+                            position: absolute;
+                            
+                            top: -1.5rem;
+                            right: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
