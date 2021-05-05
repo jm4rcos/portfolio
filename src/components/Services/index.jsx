@@ -56,12 +56,16 @@ function Services() {
                 </div>
             </div>
             <div className={styles.boxes}>
-                <div className={styles.box1}></div>
-                <div className={styles.box2}>
+                <div className={styles.box1}>
                     <span>
-                    I design and create client websites using 
-                    current technologies and design trends
+                        I design and develop client websites using 
+                        current technologies and design trends
                     </span>
+                </div>
+                <div className={styles.box2}>
+                    <div className={styles.code}><img src="/codeSVG.svg" alt="" /></div>
+                    <div className={styles.ui}><img src="/uiSVG.svg" alt="" /></div>
+                    <div className={styles.logo}><img src="/logoSVG.svg" alt="" /></div>
                 </div>
             </div>
 

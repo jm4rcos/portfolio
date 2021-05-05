@@ -7,6 +7,7 @@
     align-items: center;
 
     padding: 0 8rem 0 8rem;
+    z-index: 100;
 
     a{
         font-weight: 700;
@@ -52,8 +53,23 @@
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 990px){
     .container{
-        padding: 0 2rem 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: none;
+
+        a{
+            font-size: 1.2rem;
+        }
+
+        ul{
+            display: none;
+        }
+    
+        .icons{
+            display: none;
+        }
     }
 }
