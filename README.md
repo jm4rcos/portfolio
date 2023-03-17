@@ -1,4 +1,4 @@
-#This is my personal Portfolio
+#This was my first Portfolio
 
 # See live 👀
 https://jm4rcos.netlify.app/
